@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        :root{
+            --background-clr: #1A1C33;
+            --container-clr: #313348;
+            --font-clr: #26EFA4;
+            --spanBackgound-clr: #151C25;
+            --date-clr: #496C83;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: var(--background-clr);
+            font-family: "Orbitron", sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            box-shadow: 0 0 10px 0 var(--container-clr);
+            backdrop-filter: blur(10px);
+            /* background-color: var(--container-clr); */
+            padding:2rem 5rem;
+            border-radius: 2rem;
+            text-align: center;
+        }
+        h1{
+            font-size: 8rem;
+            margin: 20px 0;
+        }
+        span{
+            display: inline-block;
+            width: 250px;
+            background-color: var(--spanBackgound-clr);
+            border-radius: 10px;
+            color: var(--font-clr);
+        }
+        p{
+            color: var(--date-clr);
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="hours"></span>
+            <span class="minutes"></span>
+            <span class="second"></span>
+        </h1>
+        <p class="date"></p>
+    </div>
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
