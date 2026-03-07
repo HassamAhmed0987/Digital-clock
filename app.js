@@ -13,6 +13,9 @@ setInterval(function () {
     let h = nowTime.getHours()
     let m = nowTime.getMinutes()
     let s = nowTime.getSeconds()
+
+    console.log(h);
+    
     let time = `${h}:${m}:${s}`
     date.textContent = nowTime.toDateString()
     hours.textContent = h
