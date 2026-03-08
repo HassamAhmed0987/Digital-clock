@@ -15,27 +15,30 @@ setInterval(function () {
     let s = nowTime.getSeconds()
 
     console.log(h);
-    
+
     let time = `${h}:${m}:${s}`
     date.textContent = nowTime.toDateString()
     hours.textContent = h
     // minutes.textContent = m
     // second.textContent = `0${s}`
-    if(s >= 10 && s <= 60){
-        second.textContent = `${s}` 
-    }else (
+    if (s >= 10 && s <= 60) {
+        second.textContent = `${s}`
+    } else {
         second.textContent = `0${s}`
-    )
-    if(m >= 10 && m <= 60){
-        minutes.textContent = `${m}` 
-    }else (
+    }
+
+    if (m >= 10 && m <= 60) {
+        minutes.textContent = `${m}`
+    } else {
         minutes.textContent = `0${m}`
-    )
-    if(h >= 10 && m <= 24){
-        hours.textContent = `${h}` 
-    }else (
+    }
+
+    if (h >= 10 && h <= 24) {
+        hours.textContent = `${h}`
+    } else {
         hours.textContent = `0${h}`
-    )
+    }
+
     // console.log(nowTime.getDay())
 
 })
