@@ -41,7 +41,7 @@ setInterval(function () {
 
     // console.log(nowTime.getDay())
 
-})
+}, 1000)
 
 
 
